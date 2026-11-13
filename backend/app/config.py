@@ -1,10 +1,12 @@
 import os
 from datetime import date
 
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./weatherlog.db")
+default_db = "sqlite:////tmp/weatherlog.db" if os.getenv("VERCEL") else "sqlite:///./weatherlog.db"
+DATABASE_URL = os.getenv("DATABASE_URL", default_db)
+
 CORS_ORIGINS = [
     origin.strip()
-    for origin in os.getenv("CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",")
+    for origin in os.getenv("CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173,*").split(",")
     if origin.strip()
 ]
 PROVIDER_TIMEOUT_SECONDS = float(os.getenv("PROVIDER_TIMEOUT_SECONDS", "10"))

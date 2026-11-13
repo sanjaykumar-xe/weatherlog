@@ -139,6 +139,18 @@ The React web application will start at `http://localhost:5173`.
 
 ---
 
+## Deployment to Vercel
+
+WeatherLog includes native configuration for one-click deployment on [Vercel](https://vercel.com):
+
+1. Go to [vercel.com/new](https://vercel.com/new) and import your repository (`sanjaykumar-xe/weatherlog`).
+2. Leave the **Root Directory** as default (repository root); Vercel will automatically read `vercel.json`.
+3. Add Environment Variables in the Vercel dashboard:
+   - `VITE_APPLICANT_NAME`: `Sanjay Kumar`
+4. Click **Deploy**. Vercel builds the React frontend and deploys the FastAPI backend as serverless functions under a single URL!
+
+---
+
 ## Running the Automated Test Suite
 
 The backend test suite contains 87 tests covering health checks, geocoding, error handling, date boundaries, database persistence across restarts, cascade deletion, and CSV/JSON exports without requiring live internet access:

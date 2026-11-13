@@ -141,3 +141,4 @@ Use this script as a guide when recording your screen share:
 - [x] Product Manager Accelerator company description included
 - [x] Code pushed to GitHub: [https://github.com/sanjaykumar-xe/weatherlog](https://github.com/sanjaykumar-xe/weatherlog)
 - [x] Ready for Google Form submission
+
