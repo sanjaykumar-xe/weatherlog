@@ -4,6 +4,8 @@ WeatherLog is a full-stack weather intelligence and observation logging platform
 
 It implements both **Tech Assessment #1 (Frontend)** and **Tech Assessment #2 (Backend)** to deliver a production-grade Full Stack submission.
 
+> 📖 **Project Walkthrough & Demo Guide:** See [PROJECT_EXPLANATION.md](PROJECT_EXPLANATION.md) for detailed technical decisions, architecture rationale, and the 1–2 minute demo video script.
+
 ---
 
 ## About Product Manager Accelerator
